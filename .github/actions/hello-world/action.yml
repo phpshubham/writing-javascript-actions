@@ -1,0 +1,11 @@
+name: "my hello action"
+
+description: "say hello with actions"
+
+runs:
+  using: "node12"
+  main: "main.js"
+  
+  third-greeting:
+    description: "a third greeting"
+    required: false
