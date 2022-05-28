@@ -1,25 +1,18 @@
 name: "my hello action"
 
-description: "say hello with GitHub Actions"
+description: "say hello with actions"
 
-runs:
-  using: "node12"
-  main: "main.js"name: "my hello action"
+inputs:
+  first-greeting:
+    description: "who would you like to greet in the console"
+    required: true
+    default: "Hubot"
 
-description: "say hello with GitHub Actions"
+  second-greeting:
+    description: "another person to greet"
+    required: true
+    default: "Mona the Octocat"
 
-runs:
-  using: "node12"
-  main: "main.js"name: "my hello action"
-
-description: "say hello with GitHub Actions"
-
-runs:
-  using: "node12"
-  main: "main.js"name: "my hello action"
-
-description: "say hello with GitHub Actions"
-
-runs:
-  using: "node12"
-  main: "main.js"
+  third-greeting:
+    description: "a third greeting"
+    required: false
