@@ -1,14 +1,18 @@
-name: "JS Actions"
+name: "my hello action"
 
-on: [push]
+description: "say hello with actions"
 
-jobs:
-  action:
-    runs-on: "ubuntu-latest"
-    steps:
-      - uses: actions/checkout@v1
+inputs:
+  first-greeting:
+    description: "who would you like to greet in the console"
+    required: true
+    default: "Hubot"
 
-      - name: "hello-action"
-        uses: ./.github/actions/hello-world
-        with:
-          first-greeting: "Learning Lab User"
+  second-greeting:
+    description: "another person to greet"
+    required: true
+    default: "Mona the Octocat"
+
+  third-greeting:
+    description: "a third greeting"
+    required: false
